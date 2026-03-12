@@ -1,291 +1,277 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.3">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chuk Yuen vs Nga Tsin Wai • Heritage Comparison</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+   
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .container { max-width: 1200px; margin: 0 auto; }
+    .header {
+      text-align: center;
+      background: rgba(255,255,255,0.9);
+      backdrop-filter: blur(20px);
+      border-radius: 24px;
+      padding: 40px 30px;
+      margin-bottom: 40px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    }
+    .header h1 {
+      font-size: clamp(1.8em, 5vw, 3em);
+      font-weight: 700;
+      color: #1a202c;
+      margin-bottom: 15px;
+    }
+    .subtitle {
+      font-size: 1.1em;
+      color: #4a5568;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    /* Tab Navigation */
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 30px;
+    }
+    .tab {
+      padding: 12px 24px;
+      border: 2px solid #e2e8f0;
+      border-radius: 50px;
+      background: white;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-size: 0.95em;
+      color: #4a5568;
+    }
+    .tab:hover {
+      background: #edf2f7;
+      transform: translateY(-2px);
+    }
+    .tab.active {
+      background: linear-gradient(135deg, #4299e1, #3182ce);
+      color: white;
+      border-color: #4299e1;
+      box-shadow: 0 8px 20px rgba(66, 153, 225, 0.3);
+    }
+    /* Content Container */
+    .content-container {
+      background: rgba(255,255,255,0.85);
+      backdrop-filter: blur(20px);
+      border-radius: 24px;
+      padding: 30px;
+      box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    .tab-content {
+      display: none;
+      animation: fadeIn 0.4s ease;
+    }
+    .tab-content.active { display: block; }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    /* Table Styling */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      font-size: 0.95em;
+    }
+    th {
+      background: linear-gradient(135deg, #f7fafc, #edf2f7);
+      padding: 18px 20px;
+      text-align: left;
+      font-weight: 600;
+      color: #2d3748;
+      border-radius: 12px 12px 0 0;
+      position: sticky;
+      top: 0;
+    }
+    td {
+      padding: 16px 20px;
+      border-bottom: 1px solid #e2e8f0;
+      vertical-align: top;
+    }
+    tr {
+      background: white;
+      border-radius: 12px;
+      margin-bottom: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
+    }
+    tr:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    }
+    .category {
+      font-weight: 600;
+      color: #2d3748;
+      min-width: 220px;
+    }
+    /* Summary Section */
+    .summary {
+      margin-top: 40px;
+      padding: 30px;
+      background: linear-gradient(135deg, #48bb78, #38a169);
+      color: white;
+      border-radius: 20px;
+      text-align: center;
+    }
+    .summary h3 {
+      font-size: 1.5em;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+    .formula {
+      font-size: 1.3em;
+      font-weight: 700;
+      margin: 20px 0;
+      background: rgba(255,255,255,0.2);
+      padding: 15px;
+      border-radius: 12px;
+      display: inline-block;
+    }
+    /* Responsive */
+    @media (max-width: 768px) {
+      .tabs { flex-direction: column; align-items: center; }
+      .tab { width: 280px; text-align: center; }
+      table { font-size: 0.9em; }
+      td, th { padding: 12px 12px; }
+    }
   </style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;Chuk Yuen vs Nga Tsin Wai • Heritage Comparison&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>* { margin: 0; padding: 0; box-sizing: border-box; }</p>
-<p class="p2"><span class="Apple-converted-space">   </span></p>
-<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-family: system-ui, -apple-system, sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.6;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #333;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>min-height: 100vh;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.container { max-width: 1200px; margin: 0 auto; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.header {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: rgba(255,255,255,0.9);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>backdrop-filter: blur(20px);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 24px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 40px 30px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 40px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 20px 40px rgba(0,0,0,0.1);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.header h1 {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: clamp(1.8em, 5vw, 3em);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 700;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #1a202c;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 15px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.subtitle {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1.1em;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #4a5568;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>max-width: 600px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: 0 auto;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>/* Tab Navigation */</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.tabs {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>flex-wrap: wrap;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>gap: 12px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 30px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.tab {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 12px 24px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border: 2px solid #e2e8f0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 50px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: white;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 500;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>transition: all 0.3s ease;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.95em;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #4a5568;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.tab:hover {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: #edf2f7;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>transform: translateY(-2px);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.tab.active {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: linear-gradient(135deg, #4299e1, #3182ce);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-color: #4299e1;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 8px 20px rgba(66, 153, 225, 0.3);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>/* Content Container */</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.content-container {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: rgba(255,255,255,0.85);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>backdrop-filter: blur(20px);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 24px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 30px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 25px 50px rgba(0,0,0,0.15);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid rgba(255,255,255,0.2);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.tab-content {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: none;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>animation: fadeIn 0.4s ease;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.tab-content.active { display: block; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>@keyframes fadeIn {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>from { opacity: 0; transform: translateY(10px); }</p>
-<p class="p1"><span class="Apple-converted-space">      </span>to { opacity: 1; transform: translateY(0); }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>/* Table Styling */</p>
-<p class="p1"><span class="Apple-converted-space">    </span>table {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-collapse: collapse;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.95em;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>th {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: linear-gradient(135deg, #f7fafc, #edf2f7);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 18px 20px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-align: left;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 600;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #2d3748;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 12px 12px 0 0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>position: sticky;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>top: 0;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>td {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 16px 20px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-bottom: 1px solid #e2e8f0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>vertical-align: top;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>tr {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: white;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 12px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 8px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 2px 8px rgba(0,0,0,0.05);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>transition: all 0.3s ease;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>tr:hover {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>transform: translateY(-2px);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 8px 25px rgba(0,0,0,0.12);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.category {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 600;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #2d3748;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>min-width: 220px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>/* Summary Section */</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.summary {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 40px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 30px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: linear-gradient(135deg, #48bb78, #38a169);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.summary h3 {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1.5em;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 15px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 700;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.formula {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1.3em;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 700;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: 20px 0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: rgba(255,255,255,0.2);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 15px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 12px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: inline-block;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>/* Responsive */</p>
-<p class="p1"><span class="Apple-converted-space">    </span>@media (max-width: 768px) {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>.tabs { flex-direction: column; align-items: center; }</p>
-<p class="p1"><span class="Apple-converted-space">      </span>.tab { width: 280px; text-align: center; }</p>
-<p class="p1"><span class="Apple-converted-space">      </span>table { font-size: 0.9em; }</p>
-<p class="p1"><span class="Apple-converted-space">      </span>td, th { padding: 12px 12px; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Header --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="header"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;h1&gt;Chuk Yuen vs Nga Tsin Wai&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="subtitle"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>Why one Kowloon Thirteen Village achieved "Conservation by Design" while the other faces full demolition in 2026</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Tabs --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="tabs"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;button class="tab active" onclick="switchTab(0)"&gt;≡ Similarities&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;button class="tab" onclick="switchTab(1)"&gt;🟢 Nga Tsin Wai&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;button class="tab" onclick="switchTab(2)"&gt;🔴 Chuk Yuen&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;button class="tab" onclick="switchTab(3)"&gt;⇄ Key Differences&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Content --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="content-container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- Tab 0: Similarities --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="tab0" class="tab-content active"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;table&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;thead&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;tr&gt;&lt;th&gt;Category&lt;/th&gt;&lt;th&gt;Shared Characteristics&lt;/th&gt;&lt;/tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/thead&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;tbody&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;tr&gt;&lt;td class="category"&gt;History &amp; Kowloon Thirteen Villages&lt;/td&gt;&lt;td&gt;Both part of Kowloon Thirteen Villages (Yuan/Ming/Qing origins), clan settlements, internal migrations, Taiping Jiao rituals&lt;/td&gt;&lt;/tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;tr&gt;&lt;td class="category"&gt;Architecture&lt;/td&gt;&lt;td&gt;Post-war squatter-style stone houses amid urban sprawl&lt;/td&gt;&lt;/tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;tr&gt;&lt;td class="category"&gt;Grading &amp; Ordinance&lt;/td&gt;&lt;td&gt;Community debates; reviewed by AAB/AMO&lt;/td&gt;&lt;/tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;tr&gt;&lt;td class="category"&gt;Early Clearance Pressure&lt;/td&gt;&lt;td&gt;1950s–60s government clearance pressures&lt;/td&gt;&lt;/tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;tr&gt;&lt;td class="category"&gt;Policy &amp; Housing Pressure&lt;/td&gt;&lt;td&gt;Listed for public housing (2019 Policy Address)&lt;/td&gt;&lt;/tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;tr&gt;&lt;td class="category"&gt;Community Pressure&lt;/td&gt;&lt;td&gt;Villager resistance, Thirteen Villages support, NGO/scholar petitions&lt;/td&gt;&lt;/tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;tr&gt;&lt;td class="category"&gt;Cultural Value&lt;/td&gt;&lt;td&gt;Internal migration stories, clan memories, village traditions&lt;/td&gt;&lt;/tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;tr&gt;&lt;td class="category"&gt;Outcome&lt;/td&gt;&lt;td&gt;Targeted for public housing redevelopment with years of debate&lt;/td&gt;&lt;/tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/tbody&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/table&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- Tab 1: Nga Tsin Wai --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="tab1" class="tab-content"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;table&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;thead&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;tr&gt;&lt;th&gt;Category&lt;/th&gt;&lt;th&gt;Nga Tsin Wai ✓ Preserved&lt;/th&gt;&lt;/tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/thead&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;tbody&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;tr&gt;&lt;td class="category"&gt;History&lt;/td&gt;&lt;td&gt;Founded 1352 (Yuan), rebuilt walled village 1724; only urban walled village survivor, Seven Villages Alliance&lt;/td&gt;&lt;/tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;tr&gt;&lt;td class="category"&gt;Architecture&lt;/td&gt;&lt;td&gt;Intact walled layout: Gatehouse (1724), Tin Hau Temple (1726), central axis, foundations, watchtowers (AMO AIA confirmed)&lt;/td&gt;&lt;/tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;tr&gt;&lt;td class="category"&gt;Grading&lt;/td&gt;&lt;td&gt;2014 AAB Grade III (gatehouse, temple, tablet) → statutory AIA triggered&lt;/td&gt;&lt;/tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;tr&gt;&lt;td class="category"&gt;Timing&lt;/td&gt;&lt;td&gt;Avoided 1950s; 20-year delay (1980s acquisitions → URA 2007) → archaeology + debate → compromise&lt;/td&gt;&lt;/tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;tr&gt;&lt;td class="category"&gt;Authority&lt;/td&gt;&lt;td&gt;URA hybrid model (Conservation by Design: preserve core + 750 flats)&lt;/td&gt;&lt;/tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;tr&gt;&lt;td class="category"&gt;Outcome&lt;/td&gt;&lt;td&gt;Core relics preserved + 2,000㎡ Conservation Park (target opening 2030/31)&lt;/td&gt;&lt;/tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/tbody&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/table&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- Tab 2: Chuk Yuen --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="tab2" class="tab-content"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;table&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;thead&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;tr&gt;&lt;th&gt;Category&lt;/th&gt;&lt;th&gt;Chuk Yuen ✗ Demolished&lt;/th&gt;&lt;/tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/thead&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;tbody&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;tr&gt;&lt;td class="category"&gt;History&lt;/td&gt;&lt;td&gt;Kangxi 1683–84 mention, Lin clan branch (lost in Japanese occupation/WWII); post-war industrial shift&lt;/td&gt;&lt;/tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;tr&gt;&lt;td class="category"&gt;Architecture&lt;/td&gt;&lt;td&gt;Only ~12 ordinary stone houses near Wong Tai Sin Temple (post-1957 major demolition); no walls, axis, or key structures&lt;/td&gt;&lt;/tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;tr&gt;&lt;td class="category"&gt;Grading&lt;/td&gt;&lt;td&gt;Zero grading (AAB: village houses ungraded; nearby temple Grade I only)&lt;/td&gt;&lt;/tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;tr&gt;&lt;td class="category"&gt;Timing&lt;/td&gt;&lt;td&gt;1957 mass eviction (480 people to Lok Fu estates etc.); early irreversible shrinkage to remnant&lt;/td&gt;&lt;/tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;tr&gt;&lt;td class="category"&gt;Authority&lt;/td&gt;&lt;td&gt;Government + Housing Society direct resumption (fast-track three-village plan); pure clearance&lt;/td&gt;&lt;/tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;tr&gt;&lt;td class="category"&gt;Outcome&lt;/td&gt;&lt;td&gt;Full demolition ongoing into 2026 (~700+ public housing units planned)&lt;/td&gt;&lt;/tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/tbody&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/table&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- Tab 3: Key Differences --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="tab3" class="tab-content"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;table&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;thead&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;tr&gt;&lt;th&gt;Why Chuk Yuen Lost&lt;/th&gt;&lt;th&gt;Deciding Factor&lt;/th&gt;&lt;/tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/thead&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;tbody&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;tr&gt;&lt;td&gt;No Grade III relics / low integrity&lt;/td&gt;&lt;td&gt;No statutory AIA protection or preservation trigger&lt;/td&gt;&lt;/tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;tr&gt;&lt;td&gt;Early 1957 clearance&lt;/td&gt;&lt;td&gt;Irreversible loss before heritage awareness era&lt;/td&gt;&lt;/tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;tr&gt;&lt;td&gt;Rigid government-led authority&lt;/td&gt;&lt;td&gt;No URA-style flexible hybrid model&lt;/td&gt;&lt;/tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;tr&gt;&lt;td&gt;No substantial archaeology / authenticity evidence&lt;/td&gt;&lt;td&gt;No strong case for cultural significance&lt;/td&gt;&lt;/tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/tbody&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/table&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Summary – Updated to Burra Charter --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="summary"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;h3&gt;Burra Charter-Inspired Preservation Principle&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="formula"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>Cultural Significance (Authenticity + Integrity) × Understanding First × Adaptive Management = Retention</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;p style="margin-top: 20px; opacity: 0.95;"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>Chuk Yuen (1957): ❌ Low integrity + early irreversible loss + rigid clearance = Demolition in 2026&lt;br&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>Nga Tsin Wai (ongoing): ✅ Retained authenticity &amp; integrity (Grade III relics + AMO archaeology) + prolonged understanding process + URA adaptive approach = Core preserved as Conservation Park</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;p style="margin-top: 15px; font-size: 0.9em; opacity: 0.9;"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>Inspired by The Burra Charter (Australia ICOMOS, 2013): Conservation succeeds when cultural significance is first understood and assessed holistically (via authenticity &amp; integrity), before decisions are made, and actions allow compatible change while retaining core values.</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>function switchTab(index) {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>document.querySelectorAll('.tab').forEach((tab, i) =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>tab.classList.toggle('active', i === index);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>});</p>
-<p class="p1"><span class="Apple-converted-space">      </span>document.querySelectorAll('.tab-content').forEach((content, i) =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>content.classList.toggle('active', i === index);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>});</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>// Ensure first tab active on load</p>
-<p class="p1"><span class="Apple-converted-space">    </span>switchTab(0);</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <h1>Chuk Yuen vs Nga Tsin Wai</h1>
+      <p class="subtitle">
+        Why one Kowloon Thirteen Village achieved "Conservation by Design" while the other faces full demolition in 2026
+      </p>
+    </div>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      <button class="tab active" onclick="switchTab(0)">≡ Similarities</button>
+      <button class="tab" onclick="switchTab(1)">🟢 Nga Tsin Wai</button>
+      <button class="tab" onclick="switchTab(2)">🔴 Chuk Yuen</button>
+      <button class="tab" onclick="switchTab(3)">⇄ Key Differences</button>
+    </div>
+
+    <!-- Content -->
+    <div class="content-container">
+      <!-- Tab 0: Similarities -->
+      <div id="tab0" class="tab-content active">
+        <table>
+          <thead>
+            <tr><th>Category</th><th>Shared Characteristics</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="category">History & Kowloon Thirteen Villages</td><td>Both part of Kowloon Thirteen Villages (Yuan/Ming/Qing origins), clan settlements, internal migrations, Taiping Jiao rituals</td></tr>
+            <tr><td class="category">Architecture</td><td>Post-war squatter-style stone houses amid urban sprawl</td></tr>
+            <tr><td class="category">Grading & Ordinance</td><td>Community debates; reviewed by AAB/AMO</td></tr>
+            <tr><td class="category">Early Clearance Pressure</td><td>1950s–60s government clearance pressures</td></tr>
+            <tr><td class="category">Policy & Housing Pressure</td><td>Listed for public housing (2019 Policy Address)</td></tr>
+            <tr><td class="category">Community Pressure</td><td>Villager resistance, Thirteen Villages support, NGO/scholar petitions</td></tr>
+            <tr><td class="category">Cultural Value</td><td>Internal migration stories, clan memories, village traditions</td></tr>
+            <tr><td class="category">Outcome</td><td>Targeted for public housing redevelopment with years of debate</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Tab 1: Nga Tsin Wai -->
+      <div id="tab1" class="tab-content">
+        <table>
+          <thead>
+            <tr><th>Category</th><th>Nga Tsin Wai ✓ Preserved</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="category">History</td><td>Founded 1352 (Yuan), rebuilt walled village 1724; only urban walled village survivor, Seven Villages Alliance</td></tr>
+            <tr><td class="category">Architecture</td><td>Intact walled layout: Gatehouse (1724), Tin Hau Temple (1726), central axis, foundations, watchtowers (AMO AIA confirmed)</td></tr>
+            <tr><td class="category">Private Developer Phase</td><td>1980s–2000s: Cheung Kong (Li Ka-shing) acquired ~70% of houses piecemeal, demolishing many → fragmented village but delayed full clearance</td></tr>
+            <tr><td class="category">Grading</td><td>2014 AAB Grade III (gatehouse, temple, tablet) → statutory AIA triggered</td></tr>
+            <tr><td class="category">Timing</td><td>Avoided 1950s; 20-year delay (1980s acquisitions → URA 2007) → archaeology + debate → compromise</td></tr>
+            <tr><td class="category">Authority</td><td>URA hybrid model (Conservation by Design: preserve core + 750 flats)</td></tr>
+            <tr><td class="category">Outcome</td><td>Core relics preserved + 2,000㎡ Conservation Park (target opening 2030/31)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Tab 2: Chuk Yuen -->
+      <div id="tab2" class="tab-content">
+        <table>
+          <thead>
+            <tr><th>Category</th><th>Chuk Yuen ✗ Demolished</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="category">History</td><td>Kangxi 1683–84 mention, Lin clan branch (lost in Japanese occupation/WWII); post-war industrial shift</td></tr>
+            <tr><td class="category">Architecture</td><td>Only ~12 ordinary stone houses near Wong Tai Sin Temple (post-1957 major demolition); no walls, axis, or key structures</td></tr>
+            <tr><td class="category">Grading</td><td>Zero grading (AAB: village houses ungraded; nearby temple Grade I only)</td></tr>
+            <tr><td class="category">Timing</td><td>1957 mass eviction (480 people to Lok Fu estates etc.); early irreversible shrinkage to remnant</td></tr>
+            <tr><td class="category">Authority</td><td>Government + Housing Society direct resumption (fast-track three-village plan); pure clearance</td></tr>
+            <tr><td class="category">Outcome</td><td>Full demolition ongoing into 2026 (~700+ public housing units planned)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Tab 3: Key Differences -->
+      <div id="tab3" class="tab-content">
+        <table>
+          <thead>
+            <tr><th>Why Chuk Yuen Lost</th><th>Deciding Factor</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>No Grade III relics / low integrity</td><td>No statutory AIA protection or preservation trigger</td></tr>
+            <tr><td>Early 1957 clearance</td><td>Irreversible loss before heritage awareness era</td></tr>
+            <tr><td>Rigid government-led authority</td><td>No URA-style flexible hybrid model</td></tr>
+            <tr><td>No private developer phase to delay full clearance</td><td>No prolonged negotiation window for heritage grading / compromise</td></tr>
+            <tr><td>No substantial archaeology / authenticity evidence</td><td>No strong case for cultural significance</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Summary – Burra Charter -->
+    <div class="summary">
+      <h3>Burra Charter-Inspired Preservation Principle</h3>
+      <div class="formula">
+        Cultural Significance (Authenticity + Integrity) × Understanding First × Adaptive Management = Retention
+      </div>
+      <p style="margin-top: 20px; opacity: 0.95;">
+        Chuk Yuen (1957): ❌ Low integrity + early irreversible loss + rigid clearance = Demolition in 2026<br>
+        Nga Tsin Wai (ongoing): ✅ Retained authenticity & integrity (Grade III relics + AMO archaeology) + prolonged understanding process (including private developer delay) + URA adaptive approach = Core preserved as Conservation Park
+      </p>
+      <p style="margin-top: 15px; font-size: 0.9em; opacity: 0.9;">
+        Inspired by The Burra Charter (Australia ICOMOS, 2013): Conservation succeeds when cultural significance is first understood and assessed holistically (via authenticity & integrity), before decisions are made, and actions allow compatible change while retaining core values.
+      </p>
+    </div>
+  </div>
+
+  <script>
+    function switchTab(index) {
+      document.querySelectorAll('.tab').forEach((tab, i) => {
+        tab.classList.toggle('active', i === index);
+      });
+      document.querySelectorAll('.tab-content').forEach((content, i) => {
+        content.classList.toggle('active', i === index);
+      });
+    }
+    // Ensure first tab active on load
+    switchTab(0);
+  </script>
 </body>
 </html>
